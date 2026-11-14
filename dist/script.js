@@ -1,10 +1,9 @@
 const EVENT = {
   title: 'Mis Quince Años — Luciana',
-  startLocal: '20261128T200000',
-  endLocal: '20261129T010000',
-  start: new Date('2026-11-28T20:00:00-04:00'),
+  startUtc: '20261128T230000Z',
+  start: new Date('2026-11-28T19:00:00-04:00'),
   location: 'Los Lotes, Villa Mercedes Sur, calle Naranjal N.º 33',
-  description: 'Acompañanos a celebrar los quince años de Luciana. ¡No faltes!'
+  description: 'Acompañanos a celebrar los quince años de Luciana. 7:00 p. m. (Bolivia). Ubicación: https://maps.app.goo.gl/XpLqU68bp79m8Jq4A'
 };
 
 const opening = document.querySelector('#opening');
@@ -35,12 +34,14 @@ function makeSparkles(amount = 28) {
 }
 
 openButton.addEventListener('click', () => {
+  openButton.disabled = true;
   opening.classList.add('opening-now');
   makeSparkles();
   setTimeout(() => {
     opening.classList.add('opened');
     invitation.classList.add('visible');
     invitation.setAttribute('aria-hidden', 'false');
+    invitation.inert = false;
     document.body.classList.remove('locked');
     document.querySelector('.hero-content').classList.add('seen');
   }, 900);
@@ -77,8 +78,7 @@ function addToCalendar() {
     'BEGIN:VEVENT',
     `UID:luciana-xv-20261128@invitacion`,
     `DTSTAMP:${now}`,
-    `DTSTART;TZID=America/La_Paz:${EVENT.startLocal}`,
-    `DTEND;TZID=America/La_Paz:${EVENT.endLocal}`,
+    `DTSTART:${EVENT.startUtc}`,
     `SUMMARY:${escapeIcs(EVENT.title)}`,
     `DESCRIPTION:${escapeIcs(EVENT.description)}`,
     `LOCATION:${escapeIcs(EVENT.location)}`,

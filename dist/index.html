@@ -4,10 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#f6eedf">
-  <meta name="description" content="Invitación a los quince años de Luciana — 28 de noviembre de 2026.">
+  <meta name="description" content="Los quince años de Luciana — 28 de noviembre de 2026, 7:00 p. m.">
   <meta property="og:title" content="Mis Quince Años — Luciana">
-  <meta property="og:description" content="Tengo el honor de invitarte a compartir conmigo una noche muy especial.">
-  <meta property="og:image" content="assets/invitacion-referencia.png">
+  <meta property="og:description" content="Una noche para recordar. 28 de noviembre de 2026 · 7:00 p. m.">
   <title>Luciana — Mis Quince Años</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +19,7 @@
     <div class="envelope" aria-hidden="true">
       <div class="envelope-back"></div>
       <div class="letter">
-        <img src="assets/invitacion-referencia.png" alt="">
+        <span class="letter-mark">L</span><span class="letter-caption">MIS QUINCE AÑOS</span>
       </div>
       <div class="envelope-front"></div>
       <div class="envelope-flap"></div>
@@ -34,15 +33,15 @@
     </button>
   </section>
 
-  <main id="invitation" aria-hidden="true">
+  <main id="invitation" aria-hidden="true" inert>
     <header class="hero">
       <div class="silk silk-top" aria-hidden="true"></div>
       <div class="floral floral-left" aria-hidden="true">
         <span class="rose r1"></span><span class="rose r2"></span><span class="rose r3"></span>
       </div>
-      <div class="butterfly butterfly-one" aria-hidden="true">𓆩♡𓆪</div>
+      <div class="butterfly butterfly-one" aria-hidden="true">✧</div>
       <div class="hero-content reveal">
-        <div class="crown" aria-hidden="true">♛</div>
+        <div class="crown" aria-hidden="true"><svg viewBox="0 0 120 65" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M18 49Q60 37 102 49L108 22 84 38 60 9 36 38 12 22Z"/><path d="M21 54Q60 43 99 54M27 43L30 28 43 39M77 39L90 28 93 43M48 36L60 20 72 36"/><path d="M60 25l5 8-5 8-5-8z"/><circle cx="60" cy="8" r="3"/><circle cx="12" cy="20" r="2.5"/><circle cx="108" cy="20" r="2.5"/></svg></div>
         <p class="eyebrow">Mis quince años</p>
         <div class="divider"><span></span><b>✦</b><span></span></div>
         <h2>Luciana</h2>
@@ -56,7 +55,7 @@
 
     <section class="countdown-section" aria-label="Cuenta regresiva">
       <p class="section-kicker">Falta muy poquito</p>
-      <div class="countdown" id="countdown" aria-live="polite">
+      <div class="countdown" id="countdown">
         <div><strong id="days">00</strong><span>Días</span></div>
         <div><strong id="hours">00</strong><span>Horas</span></div>
         <div><strong id="minutes">00</strong><span>Minutos</span></div>
@@ -65,12 +64,12 @@
     </section>
 
     <section class="details" id="detalles">
-      <div class="ornament" aria-hidden="true">❦</div>
+      <div class="ornament" aria-hidden="true">✧</div>
       <p class="section-kicker">Guardá esta fecha</p>
       <h3>Una noche mágica</h3>
 
-      <button class="detail-card calendar-card reveal" id="addCalendar" type="button" aria-label="Agregar el 28 de noviembre a las 8 de la noche al calendario">
-        <span class="icon" aria-hidden="true">◫</span>
+      <button class="detail-card calendar-card reveal" id="addCalendar" type="button" aria-label="Agregar el 28 de noviembre a las 7 de la noche al calendario">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-12 4h2m4 0h2m-8 3h2"/></svg></span>
         <span class="detail-copy">
           <small>Fecha</small>
           <b>Sábado 28 de noviembre</b>
@@ -80,17 +79,17 @@
       </button>
 
       <button class="detail-card time-card reveal" id="addCalendarTime" type="button" aria-label="Agregar la hora al calendario">
-        <span class="icon clock" aria-hidden="true"></span>
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></span>
         <span class="detail-copy">
           <small>Hora</small>
-          <b>8:00 p. m.</b>
+          <b>7:00 p. m.</b>
           <em>Te esperamos puntual</em>
         </span>
         <span class="tap-hint">Tocá para guardar <i>＋</i></span>
       </button>
 
       <article class="detail-card location-card reveal">
-        <span class="icon pin" aria-hidden="true">●</span>
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
         <span class="detail-copy">
           <small>Lugar</small>
           <b>Los Lotes, Villa Mercedes Sur</b>
@@ -126,11 +125,10 @@
           </g>
 
           <g class="crown-vector" fill="none" stroke="#a77725" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M134 74l-10-38 31 22 25-39 25 39 31-22-10 38z" fill="url(#sashGold)"/>
-            <path d="M136 78h88l-4 16h-80z" fill="#d9b362"/>
-            <circle cx="124" cy="34" r="5" fill="#f7e5b5"/>
-            <circle cx="180" cy="17" r="5" fill="#f7e5b5"/>
-            <circle cx="236" cy="34" r="5" fill="#f7e5b5"/>
+            <path d="M134 88q46-14 92 0l4-28-23 16-8-31-19 27-19-27-8 31-23-16z" fill="#f6e9c8" stroke-width="1.5"/>
+            <path d="M136 93q44-14 88 0M142 82l2-11 13 9 7-24 16 24 16-24 7 24 13-9 2 11" stroke-width="1.2"/>
+            <path d="m180 65 4 7-4 7-4-7z" fill="#fffdfa" stroke-width="1"/>
+            <g fill="#fff9e8" stroke-width="1"><circle cx="130" cy="59" r="2.5"/><circle cx="161" cy="44" r="2.5"/><circle cx="199" cy="44" r="2.5"/><circle cx="230" cy="59" r="2.5"/></g>
           </g>
 
           <g filter="url(#portraitShadow)">
@@ -141,13 +139,15 @@
             <path d="M146 183q10-7 20 0M194 183q10-7 20 0" fill="none" stroke="#6f4c22" stroke-width="3" stroke-linecap="round"/>
             <path d="M176 185q-4 17 5 20" fill="none" stroke="#c49170" stroke-width="2.5" stroke-linecap="round"/>
             <path d="M164 217q16 12 32 0" fill="none" stroke="#a85e5e" stroke-width="3" stroke-linecap="round"/>
-            <path d="M151 245v35h58v-35" fill="#f4d9b9" stroke="#9b6c28" stroke-width="3"/>
-            <path d="M94 407c5-87 31-133 71-142 10 15 20 20 31 0 41 9 67 55 71 142z" fill="url(#dressGold)" stroke="#8d6322" stroke-width="4"/>
-            <path d="M165 265l15 19 16-19 16 22-32 37-32-37z" fill="#fff8e5" stroke="#a97b2e" stroke-width="3"/>
-            <path d="M107 336c35 18 112 18 145 0M99 374c43 20 119 20 161 0" fill="none" stroke="#f7e9c7" stroke-width="5" opacity=".7"/>
-            <path d="M126 284l121 90-18 26-121-91z" fill="url(#sashGold)" stroke="#9b6a23" stroke-width="3"/>
-            <text x="167" y="342" fill="#684713" font-family="Georgia,serif" font-size="17" font-weight="bold" letter-spacing="4" transform="rotate(36 167 342)">MIS XV</text>
-            <path d="M94 407h173" stroke="#8d6322" stroke-width="4" stroke-linecap="round"/>
+            <path d="M157 244v30c-7 14-35 13-50 30-15 18-20 61-23 103l25 3 22-66 9 63h81l9-63 23 66 24-3c-4-42-9-85-24-103-15-17-43-16-50-30v-30" fill="#f2d5bd"/>
+            <path d="M157 279q23 22 46 0" fill="none" stroke="#b99b65" stroke-width="1.3"/>
+            <path d="m180 291 3 5-3 5-3-5z" fill="#fffdf6" stroke="#b99b65" stroke-width="1"/>
+            <path d="M115 312q27-13 43 8 23-19 45 0 20-21 45-8l-16 31-12 64h-80l-13-64z" fill="url(#dressGold)" stroke="#b69862" stroke-width="1.2"/>
+            <path d="M115 315q23 10 43 5m45 0q22 10 45-5m-111 30q43 24 87 0m-82 20q38 20 77-4m-76 38q37-9 74 0" fill="none" stroke="#fff5de" stroke-width="1.6" opacity=".65"/>
+            <path d="M133 294c29 25 66 66 104 96l-16 20c-35-30-74-72-103-96z" fill="#fff8eb" stroke="#c5aa76" stroke-width="1"/>
+            <path d="M132 299c29 25 66 65 100 93m-109-79c31 27 67 67 97 92" fill="none" stroke="#c7a56a" stroke-width=".7"/>
+            <text x="179" y="358" fill="#987441" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-style="italic" letter-spacing=".6" transform="rotate(46 179 354)">Mis XV</text>
+            <g transform="translate(227 398)" fill="#fff8e7" stroke="#b9985d" stroke-width=".8"><path d="M0 0q-14-12-14-3 1 7 14 3m0 0q14-10 13-1-2 7-13 1"/><circle r="2.5" fill="#ccad70"/></g>
           </g>
         </svg>
       </div>
