@@ -101,8 +101,55 @@
     </section>
 
     <section class="closing">
-      <div class="closing-photo reveal">
-        <img src="assets/invitacion-referencia.png" alt="Invitación floral dorada de los quince años de Luciana">
+      <div class="quinceanera-portrait reveal" role="img" aria-label="Ilustración de una quinceañera con vestido, banda y corona">
+        <svg viewBox="0 0 360 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="dressGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f8e8bf"/>
+              <stop offset=".45" stop-color="#c99b46"/>
+              <stop offset="1" stop-color="#8a611f"/>
+            </linearGradient>
+            <linearGradient id="sashGold" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#fff7dc"/>
+              <stop offset=".5" stop-color="#e7c77f"/>
+              <stop offset="1" stop-color="#b88632"/>
+            </linearGradient>
+            <filter id="portraitShadow" x="-30%" y="-20%" width="160%" height="170%">
+              <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#79531c" flood-opacity=".18"/>
+            </filter>
+          </defs>
+
+          <g class="portrait-stars" fill="#c89b4c">
+            <path d="M40 128l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            <path d="M315 148l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
+            <path d="M61 255l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+          </g>
+
+          <g class="crown-vector" fill="none" stroke="#a77725" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M134 74l-10-38 31 22 25-39 25 39 31-22-10 38z" fill="url(#sashGold)"/>
+            <path d="M136 78h88l-4 16h-80z" fill="#d9b362"/>
+            <circle cx="124" cy="34" r="5" fill="#f7e5b5"/>
+            <circle cx="180" cy="17" r="5" fill="#f7e5b5"/>
+            <circle cx="236" cy="34" r="5" fill="#f7e5b5"/>
+          </g>
+
+          <g filter="url(#portraitShadow)">
+            <path d="M104 193c-11-71 22-103 76-103s87 32 76 103c-6 38-6 74 12 101l-43 26-90-2-43-24c18-27 18-63 12-101z" fill="#8e652a"/>
+            <path d="M120 179c2-48 22-74 60-74s58 26 60 74c2 38-17 76-60 76s-62-38-60-76z" fill="#f4d9b9" stroke="#9b6c28" stroke-width="3"/>
+            <path d="M119 183c-3-49 24-84 61-84 42 0 67 39 61 91-13-10-18-30-18-53-16 21-47 33-90 34-2 30-7 44-20 58 2-16 3-31 6-46z" fill="#7f571f"/>
+            <path d="M123 159c24-6 45-19 58-40 8 19 27 31 55 37" fill="none" stroke="#d2a65b" stroke-width="4" stroke-linecap="round"/>
+            <path d="M146 183q10-7 20 0M194 183q10-7 20 0" fill="none" stroke="#6f4c22" stroke-width="3" stroke-linecap="round"/>
+            <path d="M176 185q-4 17 5 20" fill="none" stroke="#c49170" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M164 217q16 12 32 0" fill="none" stroke="#a85e5e" stroke-width="3" stroke-linecap="round"/>
+            <path d="M151 245v35h58v-35" fill="#f4d9b9" stroke="#9b6c28" stroke-width="3"/>
+            <path d="M94 407c5-87 31-133 71-142 10 15 20 20 31 0 41 9 67 55 71 142z" fill="url(#dressGold)" stroke="#8d6322" stroke-width="4"/>
+            <path d="M165 265l15 19 16-19 16 22-32 37-32-37z" fill="#fff8e5" stroke="#a97b2e" stroke-width="3"/>
+            <path d="M107 336c35 18 112 18 145 0M99 374c43 20 119 20 161 0" fill="none" stroke="#f7e9c7" stroke-width="5" opacity=".7"/>
+            <path d="M126 284l121 90-18 26-121-91z" fill="url(#sashGold)" stroke="#9b6a23" stroke-width="3"/>
+            <text x="167" y="342" fill="#684713" font-family="Georgia,serif" font-size="17" font-weight="bold" letter-spacing="4" transform="rotate(36 167 342)">MIS XV</text>
+            <path d="M94 407h173" stroke="#8d6322" stroke-width="4" stroke-linecap="round"/>
+          </g>
+        </svg>
       </div>
       <p class="eyebrow">Será una alegría compartirlo con vos</p>
       <h3>¡No faltes!</h3>
